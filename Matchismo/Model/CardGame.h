@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Deck.h"
 
-@interface CardMatchingGame : NSObject
+@interface CardGame : NSObject
 
 - (id)initWithCardCount:(NSUInteger)cardCount
                withDeck:(Deck *)deck

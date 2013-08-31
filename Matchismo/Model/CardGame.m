@@ -1,17 +1,17 @@
-#import "CardMatchingGame.h"
+#import "CardGame.h"
 
 #define FLIP_COST 1
 #define MISMATCH_PENALTY 2
 #define MATCH_BONUS 4
 
-@interface CardMatchingGame()
+@interface CardGame()
 @property (strong, nonatomic) NSMutableArray *cards;
 @property (nonatomic) int score;
 @property (nonatomic) int cardMatchNumber;
 @property (strong, nonatomic) NSString *status;
 @end
 
-@implementation CardMatchingGame
+@implementation CardGame
 
 - (NSMutableArray *) cards
 {

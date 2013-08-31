@@ -1,6 +1,6 @@
 #import "MatchismoTests.h"
 #import "PlayingCard.h"
-#import "CardMatchingGame.h"
+#import "CardGame.h"
 #import "PlayingCardDeck.h"
 
 @implementation MatchismoTests
@@ -26,7 +26,7 @@
     [deck addCardWithSuit:suitA Rank:2];
     [deck addCardWithSuit:suitA Rank:1];
     
-    CardMatchingGame *game = [[CardMatchingGame alloc]initWithStaticDeck:deck matching:2];
+    CardGame *game = [[CardGame alloc]initWithStaticDeck:deck matching:2];
     if (!game)  {
         STFail(@"Fail to create game");
     }
@@ -56,7 +56,7 @@
     [deck addCardWithSuit:suitA Rank:2];
     [deck addCardWithSuit:suitA Rank:1];
     
-    CardMatchingGame *game = [[CardMatchingGame alloc]initWithStaticDeck:deck matching:3];
+    CardGame *game = [[CardGame alloc]initWithStaticDeck:deck matching:3];
     if (!game)  {
         STFail(@"Fail to create game");
     }

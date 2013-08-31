@@ -1,7 +1,7 @@
 #import "CardGameViewController.h"
 #import "PlayingCardDeck.h"
 #import "Deck.h"
-#import "CardMatchingGame.h"
+#import "CardGame.h"
 #import "GameResult.h"
 
 @interface CardGameViewController ()
@@ -9,7 +9,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-@property (strong, nonatomic) CardMatchingGame *game;
+@property (strong, nonatomic) CardGame *game;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) GameResult *gameResult;
 @end
@@ -24,7 +24,7 @@
     return _gameResult;
 }
 
-- (CardMatchingGame *)game
+- (CardGame *)game
 {
     if (!_game) {
         _game = [self instantiateNewGame];
@@ -32,11 +32,11 @@
     return _game;
 }
 
-- (CardMatchingGame *)instantiateNewGame
+- (CardGame *)instantiateNewGame
 {
     int numberOfCards = self.cardButtons.count;
     PlayingCardDeck *deck = [[PlayingCardDeck alloc] initWithFullSeries];
-    return [[CardMatchingGame alloc] initWithCardCount:numberOfCards withDeck:deck matching:2];
+    return [[CardGame alloc] initWithCardCount:numberOfCards withDeck:deck matching:2];
 }
 
 - (void)setFlipCount:(int)flipCount

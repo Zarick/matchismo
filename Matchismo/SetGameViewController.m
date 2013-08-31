@@ -1,5 +1,5 @@
 #import "SetGameViewController.h"
-#import "CardMatchingGame.h"
+#import "CardGame.h"
 
 
 @interface SetGameViewController ()
@@ -9,7 +9,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *gameStatusLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 
-@property (nonatomic) CardMatchingGame *game;
+@property (nonatomic) CardGame *game;
 
 @end
 

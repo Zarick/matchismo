@@ -27,7 +27,7 @@
 		6D9D5EF217C8E9B200066E6E /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EF117C8E9B200066E6E /* Card.m */; };
 		6D9D5EF517C8ED3C00066E6E /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EF417C8ED3C00066E6E /* PlayingCard.m */; };
 		6D9D5EF817C8F0D700066E6E /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EF717C8F0D700066E6E /* PlayingCardDeck.m */; };
-		6D9D5EFB17C9030500066E6E /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EFA17C9030500066E6E /* CardMatchingGame.m */; };
+		6D9D5EFB17C9030500066E6E /* CardGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EFA17C9030500066E6E /* CardGame.m */; };
 		6D9D5F1717CA77CB00066E6E /* cardback.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9D5F1617CA77CB00066E6E /* cardback.jpg */; };
 		6D9D5F1F17CD01C400066E6E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9D5F1E17CD01C400066E6E /* SenTestingKit.framework */; };
 		6D9D5F2017CD01C400066E6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4D89A317C12168009D079E /* UIKit.framework */; };
@@ -71,8 +71,8 @@
 		6D9D5EF417C8ED3C00066E6E /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 		6D9D5EF617C8F0D700066E6E /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		6D9D5EF717C8F0D700066E6E /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
-		6D9D5EF917C9030500066E6E /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
-		6D9D5EFA17C9030500066E6E /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
+		6D9D5EF917C9030500066E6E /* CardGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardGame.h; path = Model/CardGame.h; sourceTree = "<group>"; };
+		6D9D5EFA17C9030500066E6E /* CardGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardGame.m; path = Model/CardGame.m; sourceTree = "<group>"; };
 		6D9D5F1617CA77CB00066E6E /* cardback.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cardback.jpg; path = ../../../../Downloads/cardback.jpg; sourceTree = "<group>"; };
 		6D9D5F1D17CD01C400066E6E /* MatchismoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchismoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9D5F1E17CD01C400066E6E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -183,8 +183,8 @@
 		6D9D5EEC17C8D96900066E6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6D9D5EF917C9030500066E6E /* CardMatchingGame.h */,
-				6D9D5EFA17C9030500066E6E /* CardMatchingGame.m */,
+				6D9D5EF917C9030500066E6E /* CardGame.h */,
+				6D9D5EFA17C9030500066E6E /* CardGame.m */,
 				6D9D5EF617C8F0D700066E6E /* PlayingCardDeck.h */,
 				6D9D5EF717C8F0D700066E6E /* PlayingCardDeck.m */,
 				6D9D5EF317C8ED3C00066E6E /* PlayingCard.h */,
@@ -339,7 +339,7 @@
 				6D9D5EF217C8E9B200066E6E /* Card.m in Sources */,
 				6D9D5EF517C8ED3C00066E6E /* PlayingCard.m in Sources */,
 				6D9D5EF817C8F0D700066E6E /* PlayingCardDeck.m in Sources */,
-				6D9D5EFB17C9030500066E6E /* CardMatchingGame.m in Sources */,
+				6D9D5EFB17C9030500066E6E /* CardGame.m in Sources */,
 				6D00D7FD17D0F2F7009DDE24 /* TabBarViewController.m in Sources */,
 				6D00D80017D0F384009DDE24 /* GameResultViewController.m in Sources */,
 				6D6FD18217D1FE3F004415E9 /* GameResult.m in Sources */,
