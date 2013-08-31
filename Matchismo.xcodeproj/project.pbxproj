@@ -35,6 +35,7 @@
 		6D9D5F2717CD01C400066E6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D9D5F2517CD01C400066E6E /* InfoPlist.strings */; };
 		6D9D5F2A17CD01C400066E6E /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5F2917CD01C400066E6E /* MatchismoTests.m */; };
 		6DC7501B17CD0D2E0039EEE5 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7501A17CD0D2E0039EEE5 /* PlayingCardTests.m */; };
+		6DD1796B17D22CB400FE7AC3 /* SetGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1796A17D22CB400FE7AC3 /* SetGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,8 @@
 		6D9D5F2B17CD01C400066E6E /* MatchismoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MatchismoTests-Prefix.pch"; sourceTree = "<group>"; };
 		6DC7501917CD0D2E0039EEE5 /* PlayingCardTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardTests.h; sourceTree = "<group>"; };
 		6DC7501A17CD0D2E0039EEE5 /* PlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardTests.m; sourceTree = "<group>"; };
+		6DD1796917D22CB400FE7AC3 /* SetGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetGameViewController.h; sourceTree = "<group>"; };
+		6DD1796A17D22CB400FE7AC3 /* SetGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				6D4D89BB17C12168009D079E /* MainStoryboard.storyboard */,
+				6DD1796917D22CB400FE7AC3 /* SetGameViewController.h */,
+				6DD1796A17D22CB400FE7AC3 /* SetGameViewController.m */,
 				6D6FD18017D1FE3F004415E9 /* GameResult.h */,
 				6D6FD18117D1FE3F004415E9 /* GameResult.m */,
 				6D00D7FB17D0F2F7009DDE24 /* TabBarViewController.h */,
@@ -338,6 +343,7 @@
 				6D00D7FD17D0F2F7009DDE24 /* TabBarViewController.m in Sources */,
 				6D00D80017D0F384009DDE24 /* GameResultViewController.m in Sources */,
 				6D6FD18217D1FE3F004415E9 /* GameResult.m in Sources */,
+				6DD1796B17D22CB400FE7AC3 /* SetGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
