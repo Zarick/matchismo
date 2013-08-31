@@ -854,6 +854,7 @@ Cg
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="deal" destination="slu-bM-46A" eventType="touchUpInside" id="Isf-50-21l"/>
                                     <action selector="deal" destination="2" eventType="touchUpInside" id="mS8-wA-zFM"/>
                                 </connections>
                             </button>
@@ -861,6 +862,12 @@ Cg
                         <color key="backgroundColor" red="0.9803922176361084" green="0.96078437566757202" blue="0.95686280727386475" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Set" id="L5z-Jt-bbW"/>
+                    <connections>
+                        <outlet property="flipLabel" destination="0ns-L9-7k3" id="7al-yK-s9F"/>
+                        <outlet property="gameStatusLabel" destination="ZnN-yC-CKt" id="kWz-3j-zyc"/>
+                        <outlet property="scoreLabel" destination="fqb-gH-eWz" id="iSJ-CZ-ub5"/>
+                        <outletCollection property="cardButtons" destination="mra-bM-TS5" id="Psu-Mq-zim"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emq-u3-WAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1197,26 +1204,6 @@ Cg
         <image name="Heart.png" width="30" height="30"/>
         <image name="Score.png" width="60" height="60"/>
     </resources>
-    <classes>
-        <class className="CardGameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CardGameViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="flipLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="GameResultViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameResultViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="display" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="SetGameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SetGameViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
