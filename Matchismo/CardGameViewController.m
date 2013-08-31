@@ -10,6 +10,7 @@
 #import "PlayingCardDeck.h"
 #import "Deck.h"
 #import "CardMatchingGame.h"
+#import "GameResult.h"
 
 @interface CardGameViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
@@ -19,9 +20,18 @@
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (nonatomic) int flipCount;
+@property (strong, nonatomic) GameResult *gameResult;
 @end
 
 @implementation CardGameViewController
+
+- (GameResult *)gameResult
+{
+    if (!_gameResult) {
+        _gameResult = [[GameResult alloc] init];
+    }
+    return _gameResult;
+}
 
 - (CardMatchingGame *)game
 {
@@ -86,11 +96,13 @@
     [self.game flipCardAtIndex:cardIndex];
     self.flipCount++;
     [self updateUI];
+    self.gameResult.score = self.game.score;
 }
 
 - (IBAction)deal {
     self.matchThreeCardsSwitch.enabled = YES;
-    self.game = [self instantiateNewGame];
+    self.game = nil;
+    self.gameResult = nil;
     self.flipCount = 0;
     [self updateUI];
 }
