@@ -1,20 +1,20 @@
-#import "CardGameViewController.h"
+#import "PokerMatchCardGameViewController.h"
 #import "PlayingCardDeck.h"
 #import "Deck.h"
-#import "CardGame.h"
+#import "PokerMatchCardGame.h"
 #import "GameResult.h"
 
-@interface CardGameViewController ()
+@interface PokerMatchCardGameViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
-@property (strong, nonatomic) CardGame *game;
+@property (strong, nonatomic) PokerMatchCardGame *game;
 @property (nonatomic) int flipCount;
 @property (strong, nonatomic) GameResult *gameResult;
 @end
 
-@implementation CardGameViewController
+@implementation PokerMatchCardGameViewController
 
 - (GameResult *)gameResult
 {
@@ -24,7 +24,7 @@
     return _gameResult;
 }
 
-- (CardGame *)game
+- (PokerMatchCardGame *)game
 {
     if (!_game) {
         _game = [self instantiateNewGame];
@@ -32,11 +32,11 @@
     return _game;
 }
 
-- (CardGame *)instantiateNewGame
+- (PokerMatchCardGame *)instantiateNewGame
 {
     int numberOfCards = self.cardButtons.count;
     PlayingCardDeck *deck = [[PlayingCardDeck alloc] initWithFullSeries];
-    return [[CardGame alloc] initWithCardCount:numberOfCards fromDeck:deck shouldShuffle:YES matching:2];
+    return [[PokerMatchCardGame alloc] initWithCardCount:numberOfCards fromDeck:deck shouldShuffle:YES matching:2];
 }
 
 - (void)setFlipCount:(int)flipCount
@@ -60,8 +60,8 @@
         [cardButton setTitle:cardContent forState:UIControlStateSelected];
         [cardButton setTitle:cardContent forState:UIControlStateSelected|UIControlStateDisabled];
         cardButton.selected = card.isFaceUp;
-        cardButton.enabled = !card.isUnplayable;
-        cardButton.alpha = card.isUnplayable ? 0.3 : 1.0;
+        cardButton.enabled = card.isPlayable;
+        cardButton.alpha = card.isPlayable ? 1.0 : 0.3;
         UIImage *cardBackImage = [UIImage imageNamed:@"cardback.jpg"];
         if (!cardButton.selected) {
             [cardButton setImage:cardBackImage forState:UIControlStateNormal];

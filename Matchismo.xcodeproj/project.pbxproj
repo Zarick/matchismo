@@ -21,13 +21,13 @@
 		6D4D89B817C12168009D079E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4D89B717C12168009D079E /* Default@2x.png */; };
 		6D4D89BA17C12168009D079E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D4D89B917C12168009D079E /* Default-568h@2x.png */; };
 		6D4D89BD17C12168009D079E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D4D89BB17C12168009D079E /* MainStoryboard.storyboard */; };
-		6D4D89C017C12168009D079E /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D89BF17C12168009D079E /* CardGameViewController.m */; };
+		6D4D89C017C12168009D079E /* PokerMatchCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D89BF17C12168009D079E /* PokerMatchCardGameViewController.m */; };
 		6D6FD18217D1FE3F004415E9 /* GameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6FD18117D1FE3F004415E9 /* GameResult.m */; };
 		6D9D5EEA17C8D92300066E6E /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EE917C8D92300066E6E /* Deck.m */; };
 		6D9D5EF217C8E9B200066E6E /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EF117C8E9B200066E6E /* Card.m */; };
 		6D9D5EF517C8ED3C00066E6E /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EF417C8ED3C00066E6E /* PlayingCard.m */; };
 		6D9D5EF817C8F0D700066E6E /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EF717C8F0D700066E6E /* PlayingCardDeck.m */; };
-		6D9D5EFB17C9030500066E6E /* CardGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EFA17C9030500066E6E /* CardGame.m */; };
+		6D9D5EFB17C9030500066E6E /* PokerMatchCardGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5EFA17C9030500066E6E /* PokerMatchCardGame.m */; };
 		6D9D5F1717CA77CB00066E6E /* cardback.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D9D5F1617CA77CB00066E6E /* cardback.jpg */; };
 		6D9D5F1F17CD01C400066E6E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9D5F1E17CD01C400066E6E /* SenTestingKit.framework */; };
 		6D9D5F2017CD01C400066E6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4D89A317C12168009D079E /* UIKit.framework */; };
@@ -59,8 +59,8 @@
 		6D4D89B717C12168009D079E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6D4D89B917C12168009D079E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6D4D89BC17C12168009D079E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6D4D89BE17C12168009D079E /* CardGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
-		6D4D89BF17C12168009D079E /* CardGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
+		6D4D89BE17C12168009D079E /* PokerMatchCardGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokerMatchCardGameViewController.h; sourceTree = "<group>"; };
+		6D4D89BF17C12168009D079E /* PokerMatchCardGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokerMatchCardGameViewController.m; sourceTree = "<group>"; };
 		6D6FD18017D1FE3F004415E9 /* GameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResult.h; sourceTree = "<group>"; };
 		6D6FD18117D1FE3F004415E9 /* GameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResult.m; sourceTree = "<group>"; };
 		6D9D5EE817C8D92300066E6E /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 		6D9D5EF417C8ED3C00066E6E /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 		6D9D5EF617C8F0D700066E6E /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		6D9D5EF717C8F0D700066E6E /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
-		6D9D5EF917C9030500066E6E /* CardGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardGame.h; path = Model/CardGame.h; sourceTree = "<group>"; };
-		6D9D5EFA17C9030500066E6E /* CardGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardGame.m; path = Model/CardGame.m; sourceTree = "<group>"; };
+		6D9D5EF917C9030500066E6E /* PokerMatchCardGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PokerMatchCardGame.h; path = Model/PokerMatchCardGame.h; sourceTree = "<group>"; };
+		6D9D5EFA17C9030500066E6E /* PokerMatchCardGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PokerMatchCardGame.m; path = Model/PokerMatchCardGame.m; sourceTree = "<group>"; };
 		6D9D5F1617CA77CB00066E6E /* cardback.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cardback.jpg; path = ../../../../Downloads/cardback.jpg; sourceTree = "<group>"; };
 		6D9D5F1D17CD01C400066E6E /* MatchismoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchismoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9D5F1E17CD01C400066E6E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -153,8 +153,8 @@
 				6D00D7FC17D0F2F7009DDE24 /* TabBarViewController.m */,
 				6D00D7FE17D0F384009DDE24 /* GameResultViewController.h */,
 				6D00D7FF17D0F384009DDE24 /* GameResultViewController.m */,
-				6D4D89BE17C12168009D079E /* CardGameViewController.h */,
-				6D4D89BF17C12168009D079E /* CardGameViewController.m */,
+				6D4D89BE17C12168009D079E /* PokerMatchCardGameViewController.h */,
+				6D4D89BF17C12168009D079E /* PokerMatchCardGameViewController.m */,
 				6D9D5EEC17C8D96900066E6E /* Model */,
 				6D4D89AA17C12168009D079E /* Supporting Files */,
 			);
@@ -183,8 +183,8 @@
 		6D9D5EEC17C8D96900066E6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6D9D5EF917C9030500066E6E /* CardGame.h */,
-				6D9D5EFA17C9030500066E6E /* CardGame.m */,
+				6D9D5EF917C9030500066E6E /* PokerMatchCardGame.h */,
+				6D9D5EFA17C9030500066E6E /* PokerMatchCardGame.m */,
 				6D9D5EF617C8F0D700066E6E /* PlayingCardDeck.h */,
 				6D9D5EF717C8F0D700066E6E /* PlayingCardDeck.m */,
 				6D9D5EF317C8ED3C00066E6E /* PlayingCard.h */,
@@ -334,12 +334,12 @@
 			files = (
 				6D4D89B017C12168009D079E /* main.m in Sources */,
 				6D4D89B417C12168009D079E /* CardGameAppDelegate.m in Sources */,
-				6D4D89C017C12168009D079E /* CardGameViewController.m in Sources */,
+				6D4D89C017C12168009D079E /* PokerMatchCardGameViewController.m in Sources */,
 				6D9D5EEA17C8D92300066E6E /* Deck.m in Sources */,
 				6D9D5EF217C8E9B200066E6E /* Card.m in Sources */,
 				6D9D5EF517C8ED3C00066E6E /* PlayingCard.m in Sources */,
 				6D9D5EF817C8F0D700066E6E /* PlayingCardDeck.m in Sources */,
-				6D9D5EFB17C9030500066E6E /* CardGame.m in Sources */,
+				6D9D5EFB17C9030500066E6E /* PokerMatchCardGame.m in Sources */,
 				6D00D7FD17D0F2F7009DDE24 /* TabBarViewController.m in Sources */,
 				6D00D80017D0F384009DDE24 /* GameResultViewController.m in Sources */,
 				6D6FD18217D1FE3F004415E9 /* GameResult.m in Sources */,

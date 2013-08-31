@@ -1,4 +1,4 @@
-#import "CardGame.h"
+#import "PokerMatchCardGame.h"
 
 
 #define FLIP_COST 1
@@ -6,7 +6,7 @@
 #define MATCH_BONUS 4
 
 
-@interface CardGame()
+@interface PokerMatchCardGame()
 
 @property (nonatomic) int score;
 @property (strong, nonatomic) NSString *status;
@@ -17,7 +17,7 @@
 @end
 
 
-@implementation CardGame
+@implementation PokerMatchCardGame
 
 - (NSMutableArray *) cards
 {
@@ -70,11 +70,16 @@
     Card *card = [self cardAtIndex:index];
     NSMutableArray *flippedCards = [[NSMutableArray alloc] init];
     
-    if (!card.isUnplayable) {
+    if (card.isPlayable) {
+        
         [self clearStatus];
-        if (!card.isFaceUp) {
+        BOOL flippedUp = !card.isFaceUp;
+        card.faceUp = !card.isFaceUp;
+
+        if (flippedUp) {
+
             for (Card *otherCard in self.cards) {
-                if (otherCard.isFaceUp && !otherCard.isUnplayable) {
+                if (otherCard.isFaceUp && otherCard.isPlayable && otherCard != card) {
                     [flippedCards addObject:otherCard];
                     if (flippedCards.count + 1 == self.matchNumber) {
                         break;
@@ -84,25 +89,7 @@
             
             int totalFlippedCards = flippedCards.count + 1;
             
-            if (totalFlippedCards == self.matchNumber) {
-                int matchScore = [card match:flippedCards];
-                if (matchScore) {
-                    for (Card *otherCard in flippedCards) {
-                        otherCard.unplayable = YES;
-                    }
-                    card.unplayable = YES;
-                    int newScore = [self calculateWeightedMatchScore:matchScore];
-                    self.score += newScore;
-                    
-                    [self updateStatusWith:card matched:flippedCards gaining:newScore];
-                } else {
-                    for (Card *otherCard in flippedCards) {
-                        otherCard.faceUp = NO;
-                    }
-                    self.score -= MISMATCH_PENALTY;
-                }
-            }
-            else if (totalFlippedCards > 1 && totalFlippedCards < self.matchNumber){
+            if (totalFlippedCards > 1 && totalFlippedCards < self.matchNumber) {
                 int matchScore = [card match:flippedCards];
                 if (!matchScore) {
                     for (Card *otherCard in flippedCards) {
@@ -111,10 +98,33 @@
                     self.score -= MISMATCH_PENALTY;
                 }
             }
-            
+            else if (totalFlippedCards == self.matchNumber) {
+                int matchScore = [card match:flippedCards];
+                if (matchScore) {
+
+                    for (Card *otherCard in flippedCards) {
+                        otherCard.playable = NO;
+                    }
+                    card.playable = NO;
+
+                    int newScore = [self calculateWeightedMatchScore:matchScore];
+                    self.score += newScore;
+                    
+                    [self updateStatusWith:card matched:flippedCards gaining:newScore];
+
+                } else {
+
+                    for (Card *otherCard in flippedCards) {
+                        otherCard.faceUp = NO;
+                    }
+
+                    self.score -= MISMATCH_PENALTY;
+
+                }
+            }
+
             self.score -= FLIP_COST;
         }
-        card.faceUp = !card.isFaceUp;
     }
 }
 

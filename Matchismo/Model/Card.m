@@ -10,6 +10,15 @@
 
 @implementation Card
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _playable = YES;
+    }
+    return self;
+}
+
 - (NSString *)description
 {
     return [self description];
