@@ -7,19 +7,6 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Matchismo/Model/CardMatchingGame.m"
-         timestampString = "399397156.430138"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "104"
-         endingLineNumber = "104"
-         landmarkName = "-flipCardAtIndex:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "MatchismoTests/MatchismoTests.m"
          timestampString = "399393803.657799"
          startingColumnNumber = "9223372036854775807"
@@ -27,19 +14,6 @@
          startingLineNumber = "104"
          endingLineNumber = "104"
          landmarkName = "-testMatch3Cards"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Matchismo/Model/CardMatchingGame.m"
-         timestampString = "399393040.121891"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "54"
-         endingLineNumber = "54"
-         landmarkName = "-initWithStaticDeck:matching:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint

@@ -1,11 +1,3 @@
-//
-//  MatchismoTests.m
-//  MatchismoTests
-//
-//  Created by Zarick on 27/8/13.
-//  Copyright (c) 2013 Zarick's Lab. All rights reserved.
-//
-
 #import "MatchismoTests.h"
 #import "PlayingCard.h"
 #import "CardMatchingGame.h"
@@ -16,14 +8,10 @@
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
     [super tearDown];
 }
 

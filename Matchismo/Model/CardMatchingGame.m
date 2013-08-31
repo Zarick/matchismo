@@ -8,7 +8,7 @@
 @property (strong, nonatomic) NSMutableArray *cards;
 @property (nonatomic) int score;
 @property (nonatomic) int cardMatchNumber;
-@property (strong, nonatomic) NSString *gameUpdate;
+@property (strong, nonatomic) NSString *status;
 @end
 
 @implementation CardMatchingGame
@@ -88,7 +88,7 @@
     NSMutableArray *flippedCards = [[NSMutableArray alloc] init];
     
     if (!card.isUnplayable) {
-        [self clearScoreGainingMessage];
+        [self clearStatus];
         if (!card.isFaceUp) {
             for (Card *otherCard in self.cards) {
                 if (otherCard.isFaceUp && !otherCard.isUnplayable) {
@@ -111,7 +111,7 @@
                     int newScore = [self calculateWeightedMatchScore:matchScore];
                     self.score += newScore;
                     
-                    [self updateScoreGainingMessageWith:card against:flippedCards gaining:newScore];
+                    [self updateStatusWith:card matched:flippedCards gaining:newScore];
                 } else {
                     for (Card *otherCard in flippedCards) {
                         otherCard.faceUp = NO;
@@ -135,28 +135,28 @@
     }
 }
 
-- (NSString*)gameUpdate
+- (NSString *)status
 {
-    if (!_gameUpdate){
-        _gameUpdate = @"";
+    if (!_status) {
+        _status = @"";
     }
-    return _gameUpdate;
+    return _status;
 }
 
-- (void)updateScoreGainingMessageWith:(Card *)thisFlip
-                              against:(NSArray *)previouslyFlipped
+- (void)updateStatusWith:(Card *)thisFlip
+                              matched:(NSArray *)previouslyFlipped
                               gaining:(int)withScore
 {
     NSString *matchedCard = [thisFlip contents];
     for (Card *otherCard in previouslyFlipped) {
         matchedCard = [matchedCard stringByAppendingFormat:@",%@", [otherCard contents]];
     }
-    self.gameUpdate = [NSString stringWithFormat:@"Score %d with %@", withScore, matchedCard];
+    self.status = [NSString stringWithFormat:@"Score %d with %@", withScore, matchedCard];
 }
 
-- (void)clearScoreGainingMessage
+- (void)clearStatus
 {
-    self.gameUpdate = @"";
+    self.status = @"";
 }
 
 @end

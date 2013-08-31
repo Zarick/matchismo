@@ -72,7 +72,7 @@
         }
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
-    self.statusLabel.text = self.game.gameUpdate;
+    self.statusLabel.text = self.game.status;
     
 }
 
