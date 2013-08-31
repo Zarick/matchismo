@@ -4,11 +4,9 @@
 @interface CardGame : NSObject
 
 - (id)initWithCardCount:(NSUInteger)cardCount
-               withDeck:(Deck *)deck
-               matching:(NSUInteger)cardMatchNumber;
-
-- (id)initWithStaticDeck:(Deck *)deck
-                matching:(NSUInteger)cardMatchNumber;
+               fromDeck:(Deck *)deck
+               shouldShuffle:(BOOL)shouldShuffle
+               matching:(NSUInteger)totalFlip;
 
 - (void)flipCardAtIndex:(NSUInteger)index;
 

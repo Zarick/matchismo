@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface MatchismoTests : SenTestCase
+@interface CardGameTests : SenTestCase
 
 @end

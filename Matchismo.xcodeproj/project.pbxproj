@@ -33,7 +33,7 @@
 		6D9D5F2017CD01C400066E6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4D89A317C12168009D079E /* UIKit.framework */; };
 		6D9D5F2117CD01C400066E6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4D89A517C12168009D079E /* Foundation.framework */; };
 		6D9D5F2717CD01C400066E6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D9D5F2517CD01C400066E6E /* InfoPlist.strings */; };
-		6D9D5F2A17CD01C400066E6E /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5F2917CD01C400066E6E /* MatchismoTests.m */; };
+		6D9D5F2A17CD01C400066E6E /* CardGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5F2917CD01C400066E6E /* CardGameTests.m */; };
 		6DC7501B17CD0D2E0039EEE5 /* PlayingCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC7501A17CD0D2E0039EEE5 /* PlayingCardTests.m */; };
 		6DD1796B17D22CB400FE7AC3 /* SetGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1796A17D22CB400FE7AC3 /* SetGameViewController.m */; };
 /* End PBXBuildFile section */
@@ -78,8 +78,8 @@
 		6D9D5F1E17CD01C400066E6E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6D9D5F2417CD01C400066E6E /* MatchismoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchismoTests-Info.plist"; sourceTree = "<group>"; };
 		6D9D5F2617CD01C400066E6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6D9D5F2817CD01C400066E6E /* MatchismoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchismoTests.h; sourceTree = "<group>"; };
-		6D9D5F2917CD01C400066E6E /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
+		6D9D5F2817CD01C400066E6E /* CardGameTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameTests.h; sourceTree = "<group>"; };
+		6D9D5F2917CD01C400066E6E /* CardGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameTests.m; sourceTree = "<group>"; };
 		6D9D5F2B17CD01C400066E6E /* MatchismoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MatchismoTests-Prefix.pch"; sourceTree = "<group>"; };
 		6DC7501917CD0D2E0039EEE5 /* PlayingCardTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardTests.h; sourceTree = "<group>"; };
 		6DC7501A17CD0D2E0039EEE5 /* PlayingCardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardTests.m; sourceTree = "<group>"; };
@@ -200,8 +200,8 @@
 		6D9D5F2217CD01C400066E6E /* MatchismoTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D9D5F2817CD01C400066E6E /* MatchismoTests.h */,
-				6D9D5F2917CD01C400066E6E /* MatchismoTests.m */,
+				6D9D5F2817CD01C400066E6E /* CardGameTests.h */,
+				6D9D5F2917CD01C400066E6E /* CardGameTests.m */,
 				6D9D5F2317CD01C400066E6E /* Supporting Files */,
 				6DC7501917CD0D2E0039EEE5 /* PlayingCardTests.h */,
 				6DC7501A17CD0D2E0039EEE5 /* PlayingCardTests.m */,
@@ -351,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9D5F2A17CD01C400066E6E /* MatchismoTests.m in Sources */,
+				6D9D5F2A17CD01C400066E6E /* CardGameTests.m in Sources */,
 				6DC7501B17CD0D2E0039EEE5 /* PlayingCardTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

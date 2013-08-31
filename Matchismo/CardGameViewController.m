@@ -36,7 +36,7 @@
 {
     int numberOfCards = self.cardButtons.count;
     PlayingCardDeck *deck = [[PlayingCardDeck alloc] initWithFullSeries];
-    return [[CardGame alloc] initWithCardCount:numberOfCards withDeck:deck matching:2];
+    return [[CardGame alloc] initWithCardCount:numberOfCards fromDeck:deck shouldShuffle:YES matching:2];
 }
 
 - (void)setFlipCount:(int)flipCount

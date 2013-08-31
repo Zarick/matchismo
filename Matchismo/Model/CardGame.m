@@ -1,15 +1,21 @@
 #import "CardGame.h"
 
+
 #define FLIP_COST 1
 #define MISMATCH_PENALTY 2
 #define MATCH_BONUS 4
 
+
 @interface CardGame()
-@property (strong, nonatomic) NSMutableArray *cards;
+
 @property (nonatomic) int score;
-@property (nonatomic) int cardMatchNumber;
 @property (strong, nonatomic) NSString *status;
+
+@property (strong, nonatomic) NSMutableArray *cards;
+@property (nonatomic) int matchNumber;
+
 @end
+
 
 @implementation CardGame
 
@@ -21,52 +27,29 @@
     return _cards;
 }
 
-- (id)initWithCardMatchNumber:(NSUInteger)number
+- (id)initWithCardCount:(NSUInteger)count
+               fromDeck:(Deck *)deck
+          shouldShuffle:(BOOL)shouldShuffle
+               matching:(NSUInteger)totalFlip
 {
     self = [super init];
     
     if (self) {
-        self.cardMatchNumber = number;
-    }
-    return self;
-}
-
-- (id)initWithCardCount:(NSUInteger)count
-               withDeck:(Deck *)deck
-               matching:(NSUInteger)cardMatchNumber
-{
-    self = [self initWithCardMatchNumber:cardMatchNumber];
-    
-    if (self) {
-        self.cardMatchNumber = cardMatchNumber;
         for (int i = 0; i < count; i++) {
-            Card *card = [deck drawRandomCard];
+            Card *card;
+            if (shouldShuffle) {
+                card = [deck drawRandomCard];
+            }
+            else {
+                card = [deck drawFromTop];
+            }
             if (!card ) {
                 self = nil;
             } else {
                 self.cards[i] = card;
             }
         }
-    }
-    return self;
-}
-
-- (id)initWithStaticDeck:(Deck *)deck
-                matching:(NSUInteger)cardMatchNumber
-{
-    self = [self initWithCardMatchNumber:cardMatchNumber];
-    
-    if (self) {
-        self.cardMatchNumber = cardMatchNumber;
-        int deckSize = [deck size];
-        for (int i = 0; i < deckSize; i++) {
-            Card *card = [deck drawFromTop];
-            if (!card ) {
-                self = nil;
-            } else {
-                self.cards[i] = card;
-            }
-        }
+        self.matchNumber = totalFlip;
     }
     return self;
 }
@@ -78,7 +61,7 @@
 
 - (int)calculateWeightedMatchScore:(int)matchScore
 {
-    int weightedScale = pow(MATCH_BONUS, self.cardMatchNumber - 1);
+    int weightedScale = pow(MATCH_BONUS, self.matchNumber - 1);
     return matchScore * weightedScale;
 }
 
@@ -93,7 +76,7 @@
             for (Card *otherCard in self.cards) {
                 if (otherCard.isFaceUp && !otherCard.isUnplayable) {
                     [flippedCards addObject:otherCard];
-                    if (flippedCards.count + 1 == self.cardMatchNumber) {
+                    if (flippedCards.count + 1 == self.matchNumber) {
                         break;
                     }
                 }
@@ -101,7 +84,7 @@
             
             int totalFlippedCards = flippedCards.count + 1;
             
-            if (totalFlippedCards == self.cardMatchNumber) {
+            if (totalFlippedCards == self.matchNumber) {
                 int matchScore = [card match:flippedCards];
                 if (matchScore) {
                     for (Card *otherCard in flippedCards) {
@@ -119,7 +102,7 @@
                     self.score -= MISMATCH_PENALTY;
                 }
             }
-            else if (totalFlippedCards > 1 && totalFlippedCards < self.cardMatchNumber){
+            else if (totalFlippedCards > 1 && totalFlippedCards < self.matchNumber){
                 int matchScore = [card match:flippedCards];
                 if (!matchScore) {
                     for (Card *otherCard in flippedCards) {

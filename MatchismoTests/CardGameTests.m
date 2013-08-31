@@ -1,9 +1,9 @@
-#import "MatchismoTests.h"
+#import "CardGameTests.h"
+#import "PlayingCardDeck.h"
 #import "PlayingCard.h"
 #import "CardGame.h"
-#import "PlayingCardDeck.h"
 
-@implementation MatchismoTests
+@implementation CardGameTests
 
 - (void)setUp
 {
@@ -26,10 +26,7 @@
     [deck addCardWithSuit:suitA Rank:2];
     [deck addCardWithSuit:suitA Rank:1];
     
-    CardGame *game = [[CardGame alloc]initWithStaticDeck:deck matching:2];
-    if (!game)  {
-        STFail(@"Fail to create game");
-    }
+    CardGame *game = [[CardGame alloc]initWithCardCount:4 withDeck:deck shouldShuffle:NO matching:2];
     
     [game flipCardAtIndex:0];
     STAssertEquals(game.score, -1, @"Flip one card, -1 as flip cost");
@@ -56,10 +53,7 @@
     [deck addCardWithSuit:suitA Rank:2];
     [deck addCardWithSuit:suitA Rank:1];
     
-    CardGame *game = [[CardGame alloc]initWithStaticDeck:deck matching:3];
-    if (!game)  {
-        STFail(@"Fail to create game");
-    }
+    CardGame *game = [[CardGame alloc]initWithCardCount:4 withDeck:deck shouldShuffle:NO matching:3];
     
     [game flipCardAtIndex:3];
     STAssertEquals(game.score, -1, @"Flip one card, another -1 as flip cost");
