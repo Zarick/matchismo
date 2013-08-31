@@ -21,7 +21,6 @@
     NSString *displayText = @"";
     for (GameResult * result in [GameResult allGameResults]) {
         displayText = [displayText stringByAppendingFormat:@"Score: %d (%@, %g) \n", result.score, result.start, result.duration ];
-        NSLog(@"%@", displayText);
     }
     self.display.text = displayText;
 }
