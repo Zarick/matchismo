@@ -62,7 +62,7 @@
     NSString *symbol = @"";
     switch (self.symbol) {
         case CIRCLE:
-            symbol = @"●";
+//            symbol = @"●";
             break;
         case SQUARE:
             symbol = @"■";
@@ -154,7 +154,7 @@
             colorCheck &&
             symbolCheck &&
             numberCheck) {
-            score = 3 * 3 * 3 *3;
+            score = 4;
         }
 
     }

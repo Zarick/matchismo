@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "Deck.h"
+#import "FlipResult.h"
 
 @interface CardGame : NSObject
 
@@ -8,7 +9,7 @@
           shouldShuffle:(BOOL)shouldShuffle
                matching:(NSUInteger)totalFlip;
 
-- (void)flipCardAtIndex:(NSUInteger)index;
+- (FlipResult *)flipCardAtIndex:(NSUInteger)index;
 
 - (Card *)cardAtIndex:(NSUInteger)index;
 

@@ -63,10 +63,12 @@
     return matchScore * weightedScale;
 }
 
-- (void)flipCardAtIndex:(NSUInteger)index
+- (FlipResult *)flipCardAtIndex:(NSUInteger)index
 {
     Card *card = [self cardAtIndex:index];
     NSMutableArray *flippedCards = [[NSMutableArray alloc] init];
+    FlipResult *result = [[FlipResult alloc]init];
+    int score = 0;
     
     if (card.isPlayable) {
         
@@ -93,7 +95,9 @@
                     for (Card *otherCard in flippedCards) {
                         otherCard.faceUp = NO;
                     }
-                    self.score -= MISMATCH_PENALTY;
+                    score = -MISMATCH_PENALTY;
+                    [result addCards:@[card]];
+                    [result addCards:flippedCards];
                 }
             }
             else if (totalFlippedCards == self.matchNumber) {
@@ -105,10 +109,11 @@
                     }
                     card.playable = NO;
                     
-                    int newScore = [self calculateWeightedMatchScore:matchScore];
-                    self.score += newScore;
+                    score = [self calculateWeightedMatchScore:matchScore];
                     
-                    [self updateStatusWith:card matched:flippedCards gaining:newScore];
+                    [self updateStatusWith:card matched:flippedCards gaining:score];
+                    [result addCards:@[card]];
+                    [result addCards:flippedCards];
                     
                 } else {
                     
@@ -116,14 +121,20 @@
                         otherCard.faceUp = NO;
                     }
                     
-                    self.score -= MISMATCH_PENALTY;
+                    score = -MISMATCH_PENALTY;
+                    [result addCards:@[card]];
+                    [result addCards:flippedCards];
                     
                 }
             }
             
-            self.score -= FLIP_COST;
+            score -= FLIP_COST;
         }
+        
+        self.score += score;
+        result.score = score;
     }
+    return result;
 }
 
 - (NSString *)status
