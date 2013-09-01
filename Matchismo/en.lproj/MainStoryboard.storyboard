@@ -123,6 +123,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="xDe-bj-0ai"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="mra-bM-TS5">
                                 <rect key="frame" x="14" y="46" width="50" height="40"/>
@@ -153,6 +156,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="zNN-uv-qaX"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="jAl-Gv-Xg0">
                                 <rect key="frame" x="250" y="46" width="50" height="40"/>
@@ -183,6 +189,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="oUO-Es-Dot"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="dGZ-6q-H5d">
                                 <rect key="frame" x="173" y="46" width="50" height="40"/>
@@ -213,6 +222,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="Rsd-yB-0rD"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="3ts-8R-nCl">
                                 <rect key="frame" x="14" y="142" width="50" height="40"/>
@@ -243,6 +255,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="fXA-ZE-bRP"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="gA4-K8-mDV">
                                 <rect key="frame" x="14" y="94" width="50" height="40"/>
@@ -273,6 +288,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="6ZS-Oy-oeJ"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="AYW-u4-e8Z">
                                 <rect key="frame" x="91" y="142" width="50" height="40"/>
@@ -303,6 +321,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="c1d-RH-4Ga"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="PMx-e4-kXT">
                                 <rect key="frame" x="91" y="94" width="50" height="40"/>
@@ -333,6 +354,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="VUG-ib-I1m"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="EUT-z1-Ywi">
                                 <rect key="frame" x="173" y="142" width="50" height="40"/>
@@ -363,6 +387,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="XEw-Hw-JVe"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="klL-td-ZVQ">
                                 <rect key="frame" x="173" y="94" width="50" height="40"/>
@@ -393,6 +420,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="pis-qf-V8R"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="uho-Q2-dkv">
                                 <rect key="frame" x="250" y="142" width="50" height="40"/>
@@ -423,6 +453,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="bPA-r4-8fY"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="njh-sf-Z9D">
                                 <rect key="frame" x="250" y="94" width="50" height="40"/>
@@ -453,6 +486,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="Wcz-eE-yAq"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="0Xo-bh-Kse">
                                 <rect key="frame" x="91" y="190" width="50" height="40"/>
@@ -483,6 +519,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="Toc-Rg-5Mr"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="BAu-1E-XcK">
                                 <rect key="frame" x="14" y="190" width="50" height="40"/>
@@ -513,6 +552,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="E8t-ou-chC"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="dIW-nj-maQ">
                                 <rect key="frame" x="250" y="190" width="50" height="40"/>
@@ -543,6 +585,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="qyz-ji-oPs"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Odp-Jg-qRS">
                                 <rect key="frame" x="173" y="190" width="50" height="40"/>
@@ -573,6 +618,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="3Xq-Wn-42t"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="I4w-rM-4JM">
                                 <rect key="frame" x="14" y="286" width="50" height="40"/>
@@ -603,6 +651,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="8CL-GY-uaR"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="A95-yB-bgF">
                                 <rect key="frame" x="14" y="238" width="50" height="40"/>
@@ -633,6 +684,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="Zmr-G1-G9m"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="sV4-ZX-yM4">
                                 <rect key="frame" x="91" y="286" width="50" height="40"/>
@@ -663,6 +717,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="4qN-eM-FXl"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="sfm-0C-DeI">
                                 <rect key="frame" x="91" y="238" width="50" height="40"/>
@@ -693,6 +750,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="a6e-jF-0pI"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="D3O-q6-7vs">
                                 <rect key="frame" x="173" y="286" width="50" height="40"/>
@@ -723,6 +783,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="4c2-wE-t3b"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="cbM-Xj-fFZ">
                                 <rect key="frame" x="173" y="238" width="50" height="40"/>
@@ -753,6 +816,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="2gZ-c1-3MJ"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Z9L-bl-Vd2">
                                 <rect key="frame" x="250" y="286" width="50" height="40"/>
@@ -783,6 +849,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="8uk-9I-jaB"/>
+                                </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="eLm-Fl-l2t">
                                 <rect key="frame" x="250" y="238" width="50" height="40"/>
@@ -813,6 +882,9 @@ Cg
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="flipCard:" destination="slu-bM-46A" eventType="touchUpInside" id="50v-k0-QpE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0ns-L9-7k3">
                                 <rect key="frame" x="14" y="17" width="94" height="21"/>
@@ -867,6 +939,29 @@ Cg
                         <outlet property="gameStatusLabel" destination="ZnN-yC-CKt" id="kWz-3j-zyc"/>
                         <outlet property="scoreLabel" destination="fqb-gH-eWz" id="iSJ-CZ-ub5"/>
                         <outletCollection property="cardButtons" destination="mra-bM-TS5" id="Psu-Mq-zim"/>
+                        <outletCollection property="cardButtons" destination="wpp-e2-rkT" id="oTk-CW-zw6"/>
+                        <outletCollection property="cardButtons" destination="dGZ-6q-H5d" id="jHt-hJ-oYe"/>
+                        <outletCollection property="cardButtons" destination="jAl-Gv-Xg0" id="dJg-8r-GVt"/>
+                        <outletCollection property="cardButtons" destination="gA4-K8-mDV" id="c1H-Ej-4vS"/>
+                        <outletCollection property="cardButtons" destination="PMx-e4-kXT" id="tMV-Vf-Ov9"/>
+                        <outletCollection property="cardButtons" destination="klL-td-ZVQ" id="xaJ-vw-gBW"/>
+                        <outletCollection property="cardButtons" destination="njh-sf-Z9D" id="sZg-cz-PIT"/>
+                        <outletCollection property="cardButtons" destination="3ts-8R-nCl" id="U0B-xP-SVb"/>
+                        <outletCollection property="cardButtons" destination="AYW-u4-e8Z" id="4n6-Vt-g9w"/>
+                        <outletCollection property="cardButtons" destination="EUT-z1-Ywi" id="mda-Ey-v5Y"/>
+                        <outletCollection property="cardButtons" destination="uho-Q2-dkv" id="k47-TL-wGG"/>
+                        <outletCollection property="cardButtons" destination="BAu-1E-XcK" id="RpR-jV-kLI"/>
+                        <outletCollection property="cardButtons" destination="0Xo-bh-Kse" id="71Q-oS-L5i"/>
+                        <outletCollection property="cardButtons" destination="Odp-Jg-qRS" id="YAg-SP-XHn"/>
+                        <outletCollection property="cardButtons" destination="dIW-nj-maQ" id="zFu-bG-nxu"/>
+                        <outletCollection property="cardButtons" destination="A95-yB-bgF" id="2oG-iH-1tM"/>
+                        <outletCollection property="cardButtons" destination="sfm-0C-DeI" id="ob2-OS-8nO"/>
+                        <outletCollection property="cardButtons" destination="cbM-Xj-fFZ" id="qTz-gy-X6E"/>
+                        <outletCollection property="cardButtons" destination="eLm-Fl-l2t" id="C9f-hL-YiF"/>
+                        <outletCollection property="cardButtons" destination="I4w-rM-4JM" id="KcA-d4-75a"/>
+                        <outletCollection property="cardButtons" destination="sV4-ZX-yM4" id="FVZ-3y-ZKd"/>
+                        <outletCollection property="cardButtons" destination="D3O-q6-7vs" id="LgJ-2q-DdG"/>
+                        <outletCollection property="cardButtons" destination="Z9L-bl-Vd2" id="Oq0-09-MmW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emq-u3-WAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1214,7 +1309,6 @@ Cg
         <class className="PokerMatchCardGameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PokerMatchCardGameViewController.h"/>
             <relationships>
-                <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="flipLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
